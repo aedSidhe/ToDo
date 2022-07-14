@@ -1,6 +1,13 @@
-class ToDo {
-    constructor(project, taskArray) {
-        this.project = project;
-        this.taskArray = taskArray;
+export default class ToDo {
+    constructor() {
+        this.projects = [];
+    }
+
+    setProjects(projects) {
+        this.projects = projects;
+    }
+
+    addProject(project) {
+        this.projects.push(project);
     }
 }
